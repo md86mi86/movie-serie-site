@@ -19,5 +19,9 @@ def signup():
 def termsOfUse():
     return send_from_directory('src', 'TermsOfUse.html')
 
+@app.errorhandler(404)
+def notFound(e):
+    return send_from_directory('src', '404.html'),404
+
 if __name__ == '__main__':
     app.run(debug=True)
