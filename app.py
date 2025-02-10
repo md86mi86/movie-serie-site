@@ -20,8 +20,12 @@ def termsOfUse():
     return send_from_directory('src', 'TermsOfUse.html')
 
 @app.route('/about-us')
-def termsOfUse():
+def aboutUs():
     return send_from_directory('src', 'aboutUs.html')
+
+@app.route('/contact-us')
+def contactUs():
+    return send_from_directory('src', 'contactUs.html')
 
 @app.errorhandler(404)
 def notFound(e):
