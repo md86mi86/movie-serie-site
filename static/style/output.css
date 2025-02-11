@@ -662,8 +662,14 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
   }
   .h-40 {
     height: calc(var(--spacing) * 40);
@@ -710,8 +716,14 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -912,11 +924,26 @@
   .bg-\[\#3b3b3b\] {
     background-color: #3b3b3b;
   }
+  .bg-\[\#575757\] {
+    background-color: #575757;
+  }
+  .bg-\[\#636363\] {
+    background-color: #636363;
+  }
+  .bg-\[\#858585\] {
+    background-color: #858585;
+  }
   .bg-\[\#910000\] {
     background-color: #910000;
   }
   .bg-\[\#E50914\] {
     background-color: #E50914;
+  }
+  .bg-\[\#b3b3b3\] {
+    background-color: #b3b3b3;
+  }
+  .bg-\[\#ddd\] {
+    background-color: #ddd;
   }
   .bg-\[\#ff0000\] {
     background-color: #ff0000;
@@ -956,6 +983,21 @@
   .to-\[\#121212\]\/80 {
     --tw-gradient-to: color-mix(in oklab, #121212 80%, transparent);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .fill-\[\#26A5E4\] {
+    fill: #26A5E4;
+  }
+  .fill-\[\#181717\] {
+    fill: #181717;
+  }
+  .fill-\[\#EA4335\] {
+    fill: #EA4335;
+  }
+  .fill-\[\#FF0069\] {
+    fill: #FF0069;
+  }
+  .fill-amber-300 {
+    fill: var(--color-amber-300);
   }
   .fill-red-500 {
     fill: var(--color-red-500);
@@ -1036,6 +1078,10 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1055,6 +1101,9 @@
   }
   .text-\[\#ffd000\] {
     color: #ffd000;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-gray-200 {
     color: var(--color-gray-200);
