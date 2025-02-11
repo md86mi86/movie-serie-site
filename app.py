@@ -27,6 +27,10 @@ def aboutUs():
 def contactUs():
     return send_from_directory('src', 'contactUs.html')
 
+@app.route('/movies')
+def movies():
+    return send_from_directory('src', 'movies.html')
+
 @app.errorhandler(404)
 def notFound(e):
     return send_from_directory('src', '404.html'),404
