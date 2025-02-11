@@ -35,6 +35,48 @@ def movies():
 def series():
     return send_from_directory('src', 'series.html')
 
+# Movies Pages
+
+@app.route('/Julie-Keeps-Quiet')
+def JulieKeepsQuiet():
+    return send_from_directory('src/movies', 'Julie-Keeps-Quiet.html')
+
+@app.route('/Once')
+def Once():
+    return send_from_directory('src/movies', 'Once.html')
+
+@app.route('/Perdida')
+def Perdida():
+    return send_from_directory('src/movies', 'Perdida.html')
+
+@app.route('/Planes')
+def Planes():
+    return send_from_directory('src/movies', 'Planes.html')
+
+@app.route('/Nickel-Boys')
+def NickelBoys():
+    return send_from_directory('src/movies', 'Nickel-Boys.html')
+
+@app.route('/Distant')
+def Distant():
+    return send_from_directory('src/movies', 'Distant.html')
+
+@app.route('/Kinda-Pregnant')
+def KindaPregnant():
+    return send_from_directory('src/movies', 'Kinda-Pregnant.html')
+
+@app.route('/Spread')
+def Spread():
+    return send_from_directory('src/movies', 'Spread.html')
+
+@app.route('/Princess-Protection-Program')
+def PrincessProtectionProgram():
+    return send_from_directory('src/movies', 'Princess-Protection-Program.html')
+
+@app.route('/The-Intruder')
+def TheIntruder():
+    return send_from_directory('src/movies', 'The-Intruder.html')
+
 @app.errorhandler(404)
 def notFound(e):
     return send_from_directory('src', '404.html'),404
