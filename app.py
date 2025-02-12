@@ -77,6 +77,11 @@ def PrincessProtectionProgram():
 def TheIntruder():
     return send_from_directory('src/movies', 'The-Intruder.html')
 
+# banner movie
+@app.route('/The-Dark-Knight')
+def TheDarkKnight():
+    return send_from_directory('src/movies', 'The-Dark-Knight.html')
+
 @app.errorhandler(404)
 def notFound(e):
     return send_from_directory('src', '404.html'),404
