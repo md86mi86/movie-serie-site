@@ -1219,6 +1219,80 @@
     }
   }
 }
+@font-face {
+  font-family: 'Arad Thin';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Arad-Thin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad ExtraLight';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Arad-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/Arad-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Arad-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/Arad-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../fonts/Arad-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Arad-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arad ExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  src: url('../fonts/Arad-ExtraBold.woff2') format('woff2');
+}
+@layer utilities {
+  .font-arad-thin {
+    font-family: 'Arad Thin', sans-serif;
+  }
+  .font-arad-extralight {
+    font-family: 'Arad ExtraLight', sans-serif;
+  }
+  .font-arad-light {
+    font-family: 'Arad Light', sans-serif;
+  }
+  .font-arad-regular {
+    font-family: 'Arad Regular', sans-serif;
+  }
+  .font-arad-medium {
+    font-family: 'Arad Medium', sans-serif;
+  }
+  .font-arad-semibold {
+    font-family: 'Arad SemiBold', sans-serif;
+  }
+  .font-arad-bold {
+    font-family: 'Arad Bold', sans-serif;
+  }
+  .font-arad-extrabold {
+    font-family: 'Arad ExtraBold', sans-serif;
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
