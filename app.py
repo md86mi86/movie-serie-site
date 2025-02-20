@@ -77,11 +77,54 @@ def PrincessProtectionProgram():
 def TheIntruder():
     return send_from_directory('src/movies', 'The-Intruder.html')
 
+# series Pages
+
+@app.route('/Asura')
+def Asura():
+    return send_from_directory('src/series', 'Asura.html')
+
+@app.route('/Miss-austen')
+def MissAusten():
+    return send_from_directory('src/series', 'Miss-austen.html')
+
+@app.route('/Mo')
+def Mo():
+    return send_from_directory('src/series', 'Mo.html')
+
+@app.route('/Namibeu')
+def Namibeu():
+    return send_from_directory('src/series', 'Namibeu.html')
+
+@app.route('/Out-there')
+def OutThere():
+    return send_from_directory('src/series', 'Out-there.html')
+
+@app.route('/Prison-cell-211')
+def PrisonCell211():
+    return send_from_directory('src/series', 'Prison-cell-211.html')
+
+@app.route('/Protection')
+def Protection():
+    return send_from_directory('src/series', 'Protection.html')
+
+@app.route('/The-hooligan')
+def TheHooligan():
+    return send_from_directory('src/series', 'The-hooligan.html')
+
+@app.route('/The-penguin')
+def ThePenguin():
+    return send_from_directory('src/series', 'The-penguin.html')
+
+@app.route('/Until-i-kill-you')
+def UntilIKillYou():
+    return send_from_directory('src/series', 'Until-i-kill-you.html')
+
 # banner movie
 @app.route('/The-Dark-Knight')
 def TheDarkKnight():
     return send_from_directory('src/movies', 'The-Dark-Knight.html')
 
+# 404 error
 @app.errorhandler(404)
 def notFound(e):
     return send_from_directory('src', '404.html'),404
